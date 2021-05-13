@@ -1,0 +1,172 @@
+*{
+    margin:0;
+}
+body{
+    padding: 0px 30px 30px 30px;
+    background-color: ghostwhite
+}
+header{
+    background-color: white;
+}
+.main{
+    display: flex;
+}
+.brand{  
+    max-width:250px;  
+}
+.brand:hover{  
+    cursor: pointer;
+}
+.skate{
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    justify-content: center;
+}
+.warehouse{
+    display: flex;
+    font-size: 1.2em;    
+    color: white;
+    background-color: black;
+    padding: 0px 10px 10px 10px;
+    justify-content: center;   
+}
+.navbar{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-end;
+    flex: 1;
+    border-bottom: 3px solid red;
+}
+.cart{
+   padding: 10px 20px 0 0;
+   cursor: pointer;
+}
+.cart i{
+    padding-right: 20px;
+}
+.cart:hover, .cart i:hover{
+    color:red;
+}
+.navbar ul{
+    padding: 20px;
+    display: flex;
+    list-style-type: none;    
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar li a{
+    padding:10px;
+    text-decoration: none;   
+    text-transform: uppercase;
+}
+.navbar li a:hover{
+   color:red;
+}
+.container{
+    display: flex;
+    padding: 50px 0px 30px 0;
+    
+}
+
+.sidebar ul{
+    list-style-type: none;   
+    text-transform: uppercase;
+    padding-inline-start: 0px;
+    font-size: 1.3rem;
+}
+.sidebar ul .active{
+    border-left: 5px solid red;
+}
+.sidebar li{
+    cursor: pointer;
+    padding: 10px;
+}
+.sidebar li:hover{
+    color: red;
+}
+ul .inside-content{ 
+    margin-left: 10px;  
+    text-transform: capitalize;     
+}
+.inside-content .active2{   
+    color: red;         
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr; 
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.card{
+    display: flex;
+    transition: 0.3s;    
+    background-color:
+}
+.card:hover{
+    cursor: pointer;
+    padding-inline: 10px;
+}
+
+.card img{
+    max-width: 110px; 
+    min-height: 300px; 
+    object-fit: cover;
+}
+.card .content{
+    display: flex;
+    flex-direction: column;   
+    margin: 20px 0px 20px -20px;
+    padding: 20px;
+    max-width: auto;
+    background-color: white;
+}
+.card .content .label-active{
+    color: white;
+    background-color:purple;
+    width:fit-content;
+    padding: 2px 5px 2px 5px;
+}
+.card .content .name{
+    font-size: 1.8rem;
+    padding: 7px 0 7px 0;    
+    line-height: 1.5em
+}
+.card .content .dimensions{
+    height: 100%;  
+}
+.card .content .price{ 
+    display: flex;    
+    flex-direction: column;
+    color: red;        
+    align-items: flex-end;
+    
+
+}
+
+@media(max-width:1236px){
+    .grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr ; 
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+}
+@media(max-width:906px){
+    .grid{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ; 
+        column-gap: 1em;
+        row-gap: 1em;
+    }
+}
