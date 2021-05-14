@@ -134,9 +134,10 @@ ul .inside-content{
     background-color:purple;
     width:fit-content;
     padding: 2px 5px 2px 5px;
+    border-radius: 7px;
 }
 .card .content .name{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 7px 0 7px 0;    
     line-height: 1.5em
 }
@@ -168,5 +169,32 @@ ul .inside-content{
         grid-template-columns: 1fr ; 
         column-gap: 1em;
         row-gap: 1em;
+    }
+}
+
+@media(max-width:612px){
+    .card .content .name{
+        font-size: 1.3rem;
+        padding: 7px 0 7px 0;    
+        line-height: 1.5em
+    }
+    .card img{
+        max-width: 110px; 
+        min-height: 250px; 
+        object-fit: cover;
+    }
+    .navbar ul{
+        padding: 10px;
+        display: flex;
+        list-style-type: none;    
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .navbar li a{
+        padding:5px;
+        text-decoration: none;   
+        text-transform: uppercase;
     }
 }
