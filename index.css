@@ -174,17 +174,24 @@ ul .inside-content{
 
 @media(max-width:612px){
     .card .content .name{
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 7px 0 7px 0;    
         line-height: 1.5em
     }
     .card img{
         max-width: 110px; 
-        min-height: 250px; 
+        min-height: 230px; 
         object-fit: cover;
+    }  
+    .card .content .price{ 
+        font-size: 1.7rem;
+        display: flex;    
+        flex-direction: column;
+        color: red;        
+        align-items: flex-end;      
     }
     .navbar ul{
-        padding: 10px;
+        padding: 20px;
         display: flex;
         list-style-type: none;    
         justify-items: center;
@@ -192,9 +199,63 @@ ul .inside-content{
         justify-content: center;
         
     }
-    .navbar li a{
-        padding:5px;
+    .navbar li a{   
+        font-size:.8rem;     
+        padding:3px;
         text-decoration: none;   
         text-transform: uppercase;
+    }
+    .card .content{
+        display: flex;
+        flex-direction: column;   
+        margin: 20px 0px 20px -30px;
+        padding: 20px;
+        max-width: auto;
+        background-color: white;
+    }
+}
+@media(max-width:493px){
+    
+.sidebar ul{
+    list-style-type: none;   
+    text-transform: uppercase;
+    padding-inline-start: 0px;
+    font-size: 1rem;
+}
+ul .inside-content{ 
+    margin-left: 10px;  
+    text-transform: capitalize;     
+}
+    .card .content .name{
+        font-size: 1rem;
+        padding: 7px 0 7px 0;    
+        line-height: 1.5em
+    }
+    .card img{
+        max-width: 110px; 
+        min-height: 230px; 
+        object-fit: cover;
+    }  
+    .navbar li a{   
+        font-size:.5rem;     
+        padding:1px;
+        text-decoration: none;   
+        text-transform: uppercase;
+    }
+    .card .content .price{ 
+        font-size: 1.7rem;
+        display: flex;    
+        flex-direction: column;
+        color: red;        
+        align-items: flex-end;       
+    
+    }
+    .card .content{
+        display: flex;
+        flex-direction: column;   
+        margin: 20px 0px 20px -30px;
+        padding: 20px;
+        max-width: auto;
+        background-color: white;
     }
 }
