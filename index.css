@@ -128,6 +128,7 @@ ul .inside-content{
     padding: 20px;
     max-width: auto;
     background-color: white;
+    z-index:-1;
 }
 .card .content .label-active{
     color: white;
@@ -212,6 +213,7 @@ ul .inside-content{
         padding: 20px;
         max-width: auto;
         background-color: white;
+        z-index:-1;
     }
 }
 @media(max-width:493px){
@@ -257,5 +259,6 @@ ul .inside-content{
         padding: 20px;
         max-width: auto;
         background-color: white;
+        z-index:-1;
     }
 }
